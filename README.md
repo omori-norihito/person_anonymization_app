@@ -5,7 +5,9 @@ Vieureka用人物匿名化アプリ
 ## 概要
 
 本アプリはカメラ画角に写った人物の匿名化を行い、その結果をプレビューする機能を搭載しています。
-オブジェクトの検出には Tensor Flow Lite のモデルを使用しています。
+
+顔の検出には Tensor Flow Lite のモデルを使用しています。
+
 プレビューではカメラ画像の人物にモザイクを描画したものを表示します。
 
 ## 機器構成
@@ -47,6 +49,8 @@ Vieureka用人物匿名化アプリ
 1.カメラにアクセスして UI からアプリを起動します。
 アプリ名は「Person Anonymization Application by Python」です。
 
+![image](https://user-images.githubusercontent.com/91955493/167248815-9c39c479-6988-477e-992f-34cc1b92bce8.png)
+
 Start を押下すると、画像の撮影とオブジェクト検出を開始します。
 
 2.InstallID を元に UI 画面にログインします。
@@ -62,22 +66,33 @@ http://<camaera_address>/cgi-bin/adam.cgi?methodName=sendDataToAdamApplication&i
 - 更新間隔：250ms
 - 表示画角：VGA(640x480)
 
+![image](https://user-images.githubusercontent.com/91955493/167249037-18b4721d-eb54-4967-9cac-372213719523.png)
+
 3.各機能の紹介を以下に記載します。
+
+![image](https://user-images.githubusercontent.com/91955493/167249314-ee9ad035-dc27-4fc3-8792-6d6c94b6de21.png)
+
 ① インストール ID
+
 アプリのインストール ID を表示します。
 
 ② 表示更新間隔
+
 表示の更新間隔を変更出来ます。
+
 変更後に Start ボタンを押下して更新間隔の変更を反映します。
 
-注釈
-ブラウザ側 Javascript の更新間隔を変更するだけですので、カメラ側の
-Framerate を変更しているわけではありません。
+### 注釈
+
+ブラウザ側 Javascript の更新間隔を変更するだけですので、カメラ側のFramerate を変更しているわけではありません。
 
 ③ デモ動作制御
+
 Start でデモが開始します。Stop でデモが停止します。
 
-④ 検出結果表示エリア
+④ カメラ画像表示エリア
+
 人物匿名化の結果を表示するエリアです。
+
 人物検出した位置をモザイクで描画します。
 
