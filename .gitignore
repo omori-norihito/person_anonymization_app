@@ -127,3 +127,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+bin/pyPersonAnonymizationApp
+conf/profile.bin
+conf/applicense.bin
+conf/appPrefs.json
+conf/appConf.json
+pyPersonAnonymizationApp_*.ext
+pyPersonAnonymizationApp_*.zip
